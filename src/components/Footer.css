@@ -73,3 +73,14 @@
 }
 
 .footer-icon:hover { color: #FF6B35; }
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 2rem 1.5rem;
+  }
+  .footer-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

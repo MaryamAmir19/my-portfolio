@@ -278,7 +278,14 @@
     font-size: 30px;
   }
   .hero-right {
-    display: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+  }
+  .hero-blob {
+    width: 200px;
+    height: 230px;
   }
   .skills-section {
     padding: 3rem 1.5rem;
