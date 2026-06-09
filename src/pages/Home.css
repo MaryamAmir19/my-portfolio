@@ -277,11 +277,8 @@
   .hero-title span {
     font-size: 30px;
   }
-  .hero-right {
-    display: flex;
-    justify-content: center;
-    padding-right: 0;
-    width: 100%;
+ .hero-right {
+    display: none;
   }
   .hero-blob {
     width: 200px;
@@ -312,7 +309,7 @@
   .project-row,
   .project-row.reverse {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .project-row-image {
     width: 100%;

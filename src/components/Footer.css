@@ -75,12 +75,18 @@
 .footer-icon:hover { color: #FF6B35; }
 
 @media (max-width: 768px) {
-  .footer-content {
+  .about-footer {
     padding: 2rem 1.5rem;
   }
-  .footer-row {
+  .footer-left {
+    width: 100%;
+  }
+  .contact-row {
     flex-direction: column;
-    gap: 0.5rem;
     align-items: flex-start;
+    gap: 0.2rem;
+  }
+  .contact-value {
+    text-align: left;
   }
 }
