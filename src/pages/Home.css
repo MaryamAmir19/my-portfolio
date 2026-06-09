@@ -1,0 +1,359 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem 1rem 7rem;
+  min-height: auto;
+  gap: 3rem;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-tag {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #FF6B35;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3E1B4F;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  font-family: 'Playfair Display', serif;
+  white-space: nowrap;
+}
+
+.hero-title span {
+  font-family: 'Dancing Script', cursive;
+  color: #FF6B35;
+  font-weight: 600;
+  font-size: 52px;
+}
+
+.hero-sub {
+  font-size: 15px;
+  color: #6b4a7e;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.btn-primary,
+.btn-secondary {
+  width: 160px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #3E1B4F;
+  color: #F3EBF7;
+  border: 2px solid #3E1B4F;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: #2a1135; }
+
+.btn-secondary {
+  background: transparent;
+  color: #3E1B4F;
+  border: 2px solid #3E1B4F;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover { background: #e8d5f5; }
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.hero-blob {
+  width: 320px;
+  height: 370px;
+  background: #FF6B35;
+  border-radius: 60% 40% 55% 45% / 50% 45% 55% 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.featured {
+  padding: 3rem 7rem 5rem;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9e7ab5;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 0.5px solid #d9c8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover { border-color: #3E1B4F; }
+
+.card-cover {
+  height: 180px;
+  background: #e8d5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #9e7ab5;
+  letter-spacing: 0.05em;
+}
+
+.project-card:nth-child(2) .card-cover { background: #fce8df; }
+.project-card:nth-child(3) .card-cover { background: #ede0f5; }
+.project-card:nth-child(4) .card-cover { background: #ffd9c8; }
+
+.card-body {
+  padding: 1rem 1.25rem;
+  flex: 1;
+}
+
+.card-tag {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9e7ab5;
+  margin-bottom: 0.4rem;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3E1B4F;
+  margin-bottom: 0.4rem;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #6b4a7e;
+  line-height: 1.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-top: 0.5px solid #e8d5f5;
+}
+
+.card-year { font-size: 11px; color: #9e7ab5; }
+.card-link { font-size: 12px; color: #FF6B35; }
+
+/* ── SKILLS & TOOLS SECTION ── */
+.skills-section {
+  padding: 5rem 7rem;
+  background: #ffffff;
+}
+
+.skills-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3E1B4F;
+  margin-bottom: 2.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-card {
+  background: #faf7fd;
+  border: 1px solid #d9c8e8;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.skills-card:hover {
+  box-shadow: 0 8px 30px rgba(62, 27, 79, 0.1);
+}
+
+.skills-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FF6B35;
+  margin-bottom: 1.2rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skills-list li {
+  color: #6b4a7e;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #FF6B35;
+  font-size: 0.8rem;
+}
+
+/* Responsive — stack on smaller screens */
+@media (max-width: 900px) {
+  .skills-section {
+    padding: 3rem 2rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── STATEMENT BANNER ── */
+.statement-section {
+  padding: 6rem 7rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.statement-text {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 700;
+  color: #3E1B4F;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.statement-italic {
+  font-family: 'Dancing Script', cursive;
+  color: #FF6B35;
+  font-style: italic;
+}
+
+.statement-sub {
+  font-size: 0.95rem;
+  color: #9e7ab5;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── ALTERNATING PROJECT ROWS ── */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-row-image {
+  flex: 1;
+  height: 380px;
+  border-radius: 20px;
+}
+
+.project-row-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-row-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3E1B4F;
+  margin: 0;
+}
+
+.project-row-desc {
+  color: #6b4a7e;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.project-row-link {
+  display: inline-block;
+  color: #FF6B35;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: letter-spacing 0.2s ease;
+}
+
+.project-row-link:hover {
+  letter-spacing: 0.05em;
+}

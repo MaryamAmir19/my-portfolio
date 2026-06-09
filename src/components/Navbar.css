@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2.5rem;
+  border-bottom: 0.5px solid #d9c8e8;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-size: 17px;
+  font-weight: 500;
+  color: #3E1B4F;
+  letter-spacing: 0.04em;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  font-size: 13px;
+  color: #7a5a8a;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #3E1B4F;
+}
+
+.navbar-contact {
+  padding: 0.5rem 1.1rem;
+  border: 0.5px solid #3E1B4F;
+  border-radius: 4px;
+  color: #3E1B4F !important;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.navbar-contact:hover {
+  background: #e8d5f5;
+}
